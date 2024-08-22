@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <title>Tip calculator</title>
+</head>
+<body>
+
+    <img class="logo" src="./images/logo.svg" alt="#">
+
+    <div class="calculator">
+
+        <form>
+            <fieldset>
+
+                <div class="bill-div input-number">
+                    <label class="main-label" for="bill-inp">Bill</label>
+                    <div class="number-inp-div">
+                        <input type="number" id="bill-inp" placeholder="0">
+                        <img src="./images/icon-dollar.svg" alt="dollar-icon">
+                    </div>
+                </div>
+
+
+                <div class="tips-div">
+                    <label class="main-label">Select Tip %</label>
+
+                    <div class="tips-inputs">
+
+                        <div>
+                            <label class="radio-label" for="five">5%</label>
+                            <input type="radio" id="five" class="radio-inp" name="tip">
+                        </div>
+
+                        <div>
+                            <label class="radio-label" for="ten">10%</label>
+                            <input type="radio" id="ten" class="radio-inp" name="tip">
+                        </div>
+
+                        <div>
+                            <label class="radio-label" for="fifteen">15%</label>
+                            <input type="radio" id="fifteen" class="radio-inp" name="tip">
+                        </div>
+
+                        <div>
+                            <label class="radio-label" for="twentyfive">25%</label>
+                            <input type="radio" id="twentyfive" class="radio-inp" name="tip">
+                        </div>
+
+                        <div>
+                            <label class="radio-label" for="fifty">50%</label>
+                            <input type="radio" id="fifty" class="radio-inp" name="tip">
+                        </div>
+
+                        <input type="number" name="tip" id="custom" placeholder="Custum">
+
+                    </div>
+                </div>
+
+
+                <div class="people-number input-number">
+                    <label class="main-label" for="people-number-inp">Number of People</label>
+                    <div class="number-inp-div">
+                        <input type="number" id="people-number-inp" placeholder="0">
+                        <img src="./images/icon-person.svg" alt="person-icon">
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+
+        <div class="result-div">
+
+            <div>
+                
+            <div class="tip-total">
+                <div>
+                    <span>Tip Amount</span>
+                    <span>/ perso</span>
+                </div>
+
+                <strong class="tip-amount-strong">
+                    $0:00
+                </strong>
+            </div>
+
+            <div class="tip-total total">
+                <div>
+                    <span>Total</span>
+                    <span>/ perso</span>
+                </div>
+
+                <strong class="total-strong">
+                    $0:00
+                </strong>
+            </div>
+            </div>
+
+            <div class="buttons">
+                <button class="submit">submit</button>
+                <button class="reset display-none">reset</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+    <script src="./script.js"></script>
+    
+    
+</body>
+</html>
